@@ -10,7 +10,8 @@ app.get("/*", (req, res)=>{
     const host = req.hostname;
     const id = host.split(".")[0]; // ['id', 'kunalVercel', "com"]
 
-    
+    const filePath = req.path;
+
 })
 
 app.listen(3001);
