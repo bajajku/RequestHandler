@@ -3,4 +3,14 @@ import {S3} from 'aws-sdk';
 
 const app = express();
 
+
+app.get("/*", (req, res)=>{
+
+    // id.kunalVercel.com
+    const host = req.hostname;
+    const id = host.split(".")[0]; // ['id', 'kunalVercel', "com"]
+
+    
+})
+
 app.listen(3001);
